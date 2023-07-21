@@ -1,0 +1,74 @@
+.container {
+    background-image: url("@/static/startBox_bg.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    margin-bottom: 80px;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgb(225 225 225 / 30%);
+    }
+
+    @media (max-width: 640px) {
+        margin-bottom: 40px;
+    }
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    padding: 50px 0;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+        min-height: 300px;
+    }
+
+    @media (max-width: 480px) {
+        min-height: 260px;
+    }
+}
+
+.logo {
+    width: 300px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        width: 210px;
+        margin-bottom: 5px;
+    }
+
+    @media (max-width: 480px) {
+        width: 170px;
+    }
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 52px;
+
+    @media (max-width: 768px) {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}

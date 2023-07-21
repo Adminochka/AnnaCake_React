@@ -1,0 +1,27 @@
+.container {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d7d7d7;
+    box-shadow: 0 0 7px 0 rgb(0 0 0 / 20%);
+    //position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.inner {
+    max-width: 1200px;
+    padding: 15px 15px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    svg {
+        width: 180px;
+        @media (max-width: 640px) {
+            width: 160px;
+        }
+    }
+}

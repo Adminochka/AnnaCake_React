@@ -1,0 +1,27 @@
+.container {
+    border-bottom: 1px solid #a4a4a4;
+}
+
+.inner {
+    padding: 30px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+
+    @media (max-width: 640px) {
+        padding: 20px 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.logo {
+    svg {
+        width: 150px;
+        @media (max-width: 640px) {
+            width: 140px;
+        }
+    }
+}

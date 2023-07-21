@@ -1,0 +1,8 @@
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 30px;
+    @media (max-width: 640px) {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+}
